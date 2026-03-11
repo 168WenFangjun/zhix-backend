@@ -15,9 +15,9 @@
 
 ---
 
-[![作者主页](https://img.shields.io/badge/🔥_作者是谁？点进来就知道了-→-FF3B30?style=for-the-badge)](https://www.macfans.app/)
+[![作者主页](https://img.shields.io/badge/🔥_作者是谁？点进来就知道了-→-FF3B30?style=for-the-badge)](https://www.macfans.app/one-key-unzip/)
 &nbsp;
-[![Author](https://img.shields.io/badge/🌐_Who_built_this%3F_Find_out_→-6C63FF?style=for-the-badge)](https://www.macfans.app/)
+[![Author](https://img.shields.io/badge/🌐_Who_built_this%3F_Find_out_→-6C63FF?style=for-the-badge)](https://www.macfans.app/one-key-unzip/)
 
 ---
 
@@ -215,7 +215,7 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 
 **这个项目背后的人，比你想象的更有意思。**
 
-[![👀 去看看作者在搞什么](https://img.shields.io/badge/👀_去看看作者在搞什么_→_macfans.app-FF3B30?style=for-the-badge)](https://www.macfans.app/)
+[![👀 去看看作者在搞什么](https://img.shields.io/badge/👀_去看看作者在搞什么_→_macfans.app-FF3B30?style=for-the-badge)](https://www.macfans.app/one-key-unzip/)
 
 </div>
 
@@ -412,7 +412,7 @@ Auto-deployed via GitHub Actions on every push.
 
 **The person behind this project is worth knowing.**
 
-[![🔗 Step Into the Author's World →](https://img.shields.io/badge/🔗_Step_Into_the_Author's_World_→-6C63FF?style=for-the-badge)](https://www.macfans.app/)
+[![🔗 Step Into the Author's World →](https://img.shields.io/badge/🔗_Step_Into_the_Author's_World_→-6C63FF?style=for-the-badge)](https://www.macfans.app/one-key-unzip/)
 
 </div>
 
