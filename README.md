@@ -197,7 +197,7 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 
 ### 🚀 部署
 
-通过 GitHub Actions 自动构建，推送即部署，详见 [Backend 部署指南](../docs/项目backend部署指南1.0版.md)。
+通过 GitHub Actions 自动构建，推送即部署。
 
 <br>
 
@@ -386,7 +386,7 @@ Intern ──→ Editor ──→ Senior Editor ──→ Lead Editor ──→ 
 
 ### 🚀 Deployment
 
-Auto-deployed via GitHub Actions on every push. See [Backend Deployment Guide](../docs/项目backend部署指南1.0版.md).
+Auto-deployed via GitHub Actions on every push.
 
 <br>
 
