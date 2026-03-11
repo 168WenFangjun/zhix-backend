@@ -21,13 +21,13 @@
 <tr>
 <td align="center" width="100%">
 
-### 👉 [**点这里，去作者主页看看**](https://www.macfans.app/) 👈
+### 👉 [**点这里，去作者主页看看**][homepage] 👈
 
 **不只有代码 · 还有你没见过的东西**
 
 *好奇心是最好的入场券*
 
-<sub>✦ &nbsp; Explore the author's world → <a href="https://www.macfans.app/"><b>macfans.app</b></a> &nbsp; ✦</sub>
+<sub>✦ &nbsp; Explore the author's world → <b><a href="[homepage]">点击访问</a></b> &nbsp; ✦</sub>
 
 </td>
 </tr>
@@ -210,7 +210,7 @@ go test -v ./...
 
 **认真的人，值得去认识认真的作者 →**
 
-### 🌐 [**macfans.app**](https://www.macfans.app/)
+### 🌐 [**点击访问作者主页**][homepage]
 
 *中文 · English · 都在这里*
 
@@ -219,3 +219,5 @@ go test -v ./...
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:000000&height=120&section=footer" width="100%"/>
 
 </div>
+
+[homepage]: https://www.macfans.app/
