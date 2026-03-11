@@ -1,7 +1,10 @@
 package main
 
 import (
+	"log"
+	"net/http"
 	"os"
+	"time"
 	"zhix-backend/config"
 	"zhix-backend/middleware"
 	"zhix-backend/routes"
@@ -11,11 +14,7 @@ import (
 )
 
 func init() {
-	if err := godotenv.Load(); err != nil {
-	}
-	if secret := os.Getenv("JWT_SECRET"); secret != "" {
-	} else {
-	}
+	godotenv.Load()
 }
 
 func main() {
@@ -23,19 +22,39 @@ func main() {
 	config.InitDB()
 	config.InitRedis()
 
-	r := gin.Default()
+	if os.Getenv("GIN_MODE") == "release" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+
+	r := gin.New()
+	r.Use(gin.Recovery())
 	r.Use(corsMiddleware())
 
 	routes.SetupRoutes(r)
 
-	r.Run(":8080")
+	srv := &http.Server{
+		Addr:         ":8080",
+		Handler:      r,
+		ReadTimeout:  15 * time.Second,
+		WriteTimeout: 15 * time.Second,
+		IdleTimeout:  60 * time.Second,
+	}
+	log.Fatal(srv.ListenAndServe())
 }
 
 func corsMiddleware() gin.HandlerFunc {
+	allowedOrigin := os.Getenv("ALLOWED_ORIGIN")
+	if allowedOrigin == "" {
+		allowedOrigin = "http://localhost:3000"
+	}
 	return func(c *gin.Context) {
-		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		origin := c.GetHeader("Origin")
+		if origin == allowedOrigin {
+			c.Writer.Header().Set("Access-Control-Allow-Origin", origin)
+		}
 		c.Writer.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
 		c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
+		c.Writer.Header().Set("Access-Control-Max-Age", "86400")
 		if c.Request.Method == "OPTIONS" {
 			c.AbortWithStatus(204)
 			return

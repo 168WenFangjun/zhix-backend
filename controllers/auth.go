@@ -30,7 +30,11 @@ func Register(c *gin.Context) {
 		input.Nickname = "极客的志向"
 	}
 
-	hashedPassword, _ := bcrypt.GenerateFromPassword([]byte(input.Password), bcrypt.DefaultCost)
+	hashedPassword, err := bcrypt.GenerateFromPassword([]byte(input.Password), bcrypt.DefaultCost)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to process password"})
+		return
+	}
 	user := models.User{
 		Email:    input.Email,
 		Password: string(hashedPassword),

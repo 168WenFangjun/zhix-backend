@@ -10,6 +10,7 @@ import (
 	"zhix-backend/models"
 
 	"github.com/gin-gonic/gin"
+	"gorm.io/gorm"
 )
 
 func GetArticles(c *gin.Context) {
@@ -244,16 +245,12 @@ func LikeArticle(c *gin.Context) {
 		return
 	}
 
-	// 使用原子操作增加点赞数
-	if err := config.DB.Model(&article).Update("likes", article.Likes+1).Error; err != nil {
+	if err := config.DB.Model(&article).UpdateColumn("likes", gorm.Expr("likes + 1")).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update likes"})
 		return
 	}
+	config.DB.Model(&models.User{}).Where("id = ?", article.AuthorID).UpdateColumn("total_liked", gorm.Expr("total_liked + 1"))
 
-	// 增加作者被点赞统计
-	config.DB.Model(&models.User{}).Where("id = ?", article.AuthorID).Update("total_liked", config.DB.Raw("total_liked + 1"))
-
-	// 重新获取更新后的数据
 	config.DB.First(&article, id)
 	c.JSON(http.StatusOK, gin.H{"likes": article.Likes})
 }
@@ -267,16 +264,12 @@ func ViewArticle(c *gin.Context) {
 		return
 	}
 
-	// 使用原子操作增加浏览数
-	if err := config.DB.Model(&article).Update("views", article.Views+1).Error; err != nil {
+	if err := config.DB.Model(&article).UpdateColumn("views", gorm.Expr("views + 1")).Error; err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to update views"})
 		return
 	}
+	config.DB.Model(&models.User{}).Where("id = ?", article.AuthorID).UpdateColumn("total_viewed", gorm.Expr("total_viewed + 1"))
 
-	// 增加作者被浏览统计
-	config.DB.Model(&models.User{}).Where("id = ?", article.AuthorID).Update("total_viewed", config.DB.Raw("total_viewed + 1"))
-
-	// 重新获取更新后的数据
 	config.DB.First(&article, id)
 	c.JSON(http.StatusOK, gin.H{"views": article.Views})
 }

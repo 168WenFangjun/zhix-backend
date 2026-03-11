@@ -82,14 +82,22 @@ go run main.go
 `.env` 配置：
 
 ```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=<db_user>
-DB_PASSWORD=<db_password>
-DB_NAME=zhix
-REDIS_HOST=localhost
-REDIS_PORT=6379
-JWT_SECRET=<jwt_secret>
+# 数据库（必须设置）
+DATABASE_URL=host=localhost user=<db_user> password=<db_password> dbname=zhix port=5432 sslmode=disable TimeZone=Asia/Shanghai
+
+# Redis（支持 redis://host:port 或 host:port 两种格式）
+REDIS_URL=redis://localhost:6379
+REDIS_PASSWORD=
+
+# JWT 密钥（必须设置，建议 openssl rand -hex 32 生成）
+JWT_SECRET=<your_32_char_random_secret>
+
+# CORS 允许的前端域名
+ALLOWED_ORIGIN=http://localhost:3000
+
+# 运行模式（生产环境设为 release）
+GIN_MODE=debug
+
 PORT=8080
 ```
 
@@ -271,14 +279,22 @@ go run main.go
 `.env` config:
 
 ```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=<db_user>
-DB_PASSWORD=<db_password>
-DB_NAME=zhix
-REDIS_HOST=localhost
-REDIS_PORT=6379
-JWT_SECRET=<jwt_secret>
+# Database (required)
+DATABASE_URL=host=localhost user=<db_user> password=<db_password> dbname=zhix port=5432 sslmode=disable TimeZone=Asia/Shanghai
+
+# Redis (supports both redis://host:port and host:port formats)
+REDIS_URL=redis://localhost:6379
+REDIS_PASSWORD=
+
+# JWT secret (required — generate with: openssl rand -hex 32)
+JWT_SECRET=<your_32_char_random_secret>
+
+# CORS allowed origin
+ALLOWED_ORIGIN=http://localhost:3000
+
+# Run mode (set to release in production)
+GIN_MODE=debug
+
 PORT=8080
 ```
 
