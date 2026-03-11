@@ -38,16 +38,6 @@ func SetupRoutes(r *gin.Engine) {
 			user.PUT("/avatar", controllers.UpdateAvatar)
 		}
 
-		payment := api.Group("/payment")
-		{
-			payment.POST("/unionpay-h5", controllers.ProcessUnionPayH5)
-		}
-
-		unionpay := api.Group("/unionpay")
-		{
-			unionpay.POST("/pay", controllers.ProcessUnionPayH5)
-		}
-
 		articles := api.Group("/articles")
 		{
 			articles.GET("", middleware.OptionalAuthMiddleware(), controllers.GetArticles)

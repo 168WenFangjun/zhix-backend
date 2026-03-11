@@ -112,7 +112,6 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 ✦ 文章增删改查，点赞 · 收藏 · 浏览全支持
 ✦ 用户成长体系，等级自动计算
 ✦ Redis 缓存加速，高并发不慌
-✦ 云闪付 H5 支付集成
 ✦ 视频转码支持
 ```
 
@@ -174,7 +173,6 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 | `GET` | `/api/cover/random` | 随机封面图 |
 | `GET` | `/api/cover/cartoon` | 随机插画封面 |
 | `GET` | `/api/cover/video` | 随机视频封面 |
-| `POST` | `/api/payment/unionpay-h5` | 云闪付 H5 支付 |
 | `POST` | `/api/transcode/mp4-to-fmp4` | 视频转码（管理员）|
 
 </details>
@@ -303,7 +301,6 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 ✦ Full article CRUD — like, bookmark, view all supported
 ✦ User growth system with auto-calculated levels
 ✦ Redis caching for high-concurrency workloads
-✦ UnionPay H5 payment integration
 ✦ Video transcoding support
 ```
 
@@ -365,7 +362,6 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 | `GET` | `/api/cover/random` | Random cover image |
 | `GET` | `/api/cover/cartoon` | Random illustration cover |
 | `GET` | `/api/cover/video` | Random video cover |
-| `POST` | `/api/payment/unionpay-h5` | UnionPay H5 payment |
 | `POST` | `/api/transcode/mp4-to-fmp4` | Video transcode (Admin) |
 
 </details>
