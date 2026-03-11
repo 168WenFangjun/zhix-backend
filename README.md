@@ -1,46 +1,48 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:1a1a2e,100:16213e&height=220&section=header&text=ZhiX%20Backend&fontSize=72&fontColor=00d4ff&fontAlignY=40&desc=极志社区%20后端引擎&descAlignY=62&descSize=22&animation=fadeIn&fontAlign=50" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:1a1a2e,100:16213e&height=220&section=header&text=ZhiX%20Backend&fontSize=72&fontColor=00d4ff&fontAlignY=40&desc=极志社区%20·%20后端引擎&descAlignY=62&descSize=22&animation=fadeIn" width="100%"/>
 
 <br/>
 
-[![Go](https://img.shields.io/badge/Go_1.23-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/)
-[![Gin](https://img.shields.io/badge/Gin-Framework-00B4D8?style=for-the-badge&logo=go&logoColor=white)](https://gin-gonic.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL_15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Redis](https://img.shields.io/badge/Redis_7-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![JWT](https://img.shields.io/badge/JWT-Auth-black?style=for-the-badge&logo=jsonwebtokens)](https://jwt.io/)
-
-<br/>
-
----
-
-## 🔥 写这个项目的人，比这个项目更有意思
-
-<table>
-<tr>
-<td align="center" width="100%">
-
-### 👉 [**点这里，去作者主页看看**][homepage] 👈
-
-**不只有代码 · 还有你没见过的东西**
-
-*好奇心是最好的入场券*
-
-<sub>✦ &nbsp; Explore the author's world → <b><a href="[homepage]">点击访问</a></b> &nbsp; ✦</sub>
-
-</td>
-</tr>
-</table>
-
----
+[![Go](https://img.shields.io/badge/Go_1.23-00ADD8?style=for-the-badge&logo=go&logoColor=white)][go]
+[![Gin](https://img.shields.io/badge/Gin-Framework-00B4D8?style=for-the-badge&logo=go&logoColor=white)][gin]
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL_15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)][postgres]
+[![Redis](https://img.shields.io/badge/Redis_7-DC382D?style=for-the-badge&logo=redis&logoColor=white)][redis]
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)][docker]
+[![JWT](https://img.shields.io/badge/JWT-Auth-black?style=for-the-badge&logo=jsonwebtokens)][jwt]
 
 </div>
 
+---
+
+<div align="center">
+
+### 🔥 写这个项目的人，比这个项目更有意思
+
+> 不只有代码 · 还有你没见过的东西
+>
+> 好奇心是最好的入场券
+
+**👉 [点这里，去作者主页逛逛][homepage-cn] 👈**
+
+---
+
+### 🔥 The person behind this project is more interesting than the project itself
+
+> Not just code · There's something here you haven't seen before
+>
+> Curiosity is the best ticket in
+
+**👉 [Click here to visit the author's homepage][homepage-en] 👈**
+
+</div>
+
+---
+
 ## 🧬 这是什么
 
-> 一个跑在云上的 Go 后端服务。  
-> 极志社区的数据中枢——用户、文章、收藏、支付，全在这里流转。  
+> 一个跑在云上的 Go 后端服务。
+> 极志社区的数据中枢——用户、文章、收藏、支付，全在这里流转。
 > **快 · 稳 · 轻 · 没有废话。**
 
 ---
@@ -107,8 +109,8 @@ DB_PORT=5432               # 数据库端口
 DB_USER=<db_user>          # 用户名
 DB_PASSWORD=<db_password>  # 密码
 DB_NAME=zhix               # 数据库名
-REDIS_HOST=localhost        # Redis 地址
-REDIS_PORT=6379             # Redis 端口
+REDIS_HOST=localhost       # Redis 地址
+REDIS_PORT=6379            # Redis 端口
 JWT_SECRET=<jwt_secret>    # JWT 密钥
 PORT=8080                  # 服务端口
 ```
@@ -204,15 +206,28 @@ go test -v ./...
 
 <div align="center">
 
-<br/>
+<table>
+<tr>
+<td align="center">
 
 **看到这里了，说明你是认真的。**
 
-**认真的人，值得去认识认真的作者 →**
+认真的人，值得去认识认真的作者 →
 
-### 🌐 [**点击访问作者主页**][homepage]
+**🌐 [前往作者主页][homepage-cn]**
 
-*中文 · English · 都在这里*
+</td>
+<td align="center">
+
+**You made it to the end — respect.**
+
+Serious devs deserve to meet a serious author →
+
+**🌐 [Visit Author's Homepage][homepage-en]**
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -220,4 +235,11 @@ go test -v ./...
 
 </div>
 
-[homepage]: https://www.macfans.app/
+[homepage-cn]: https://www.macfans.app/
+[homepage-en]: https://www.macfans.app/
+[go]: https://golang.org/
+[gin]: https://gin-gonic.com/
+[postgres]: https://www.postgresql.org/
+[redis]: https://redis.io/
+[docker]: https://www.docker.com/
+[jwt]: https://jwt.io/
