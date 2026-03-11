@@ -2,11 +2,7 @@
 
 极志社区后端服务，基于 Go + Gin 构建的 RESTful API 服务。
 
-> 作者主页：[macfans.app](https://www.macfans.app/)
-
----
-
-> Author's Homepage: [macfans.app](https://www.macfans.app/)
+> 🏠 作者主页：[点击访问](https://www.macfans.app/) &nbsp;|&nbsp; Author's Homepage: [Visit Here](https://www.macfans.app/)
 
 ## 技术栈
 
