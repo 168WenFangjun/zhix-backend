@@ -1,40 +1,47 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=ZhiX%20Backend&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=极志社区%20·%20后端引擎&descAlignY=58&descSize=20&animation=fadeIn" width="100%"/>
-
-[![Go](https://img.shields.io/badge/Go-1.23-00ADD8?style=flat-square&logo=go&logoColor=white)](https://golang.org/)
-[![Gin](https://img.shields.io/badge/Gin-Framework-008ECF?style=flat-square&logo=go&logoColor=white)](https://gin-gonic.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
-[![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)]()
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:1a1a2e,100:16213e&height=220&section=header&text=ZhiX%20Backend&fontSize=72&fontColor=00d4ff&fontAlignY=40&desc=极志社区%20后端引擎&descAlignY=62&descSize=22&animation=fadeIn&fontAlign=50" width="100%"/>
 
 <br/>
 
-### 💡 想看看写这个的人是谁？
+[![Go](https://img.shields.io/badge/Go_1.23-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/)
+[![Gin](https://img.shields.io/badge/Gin-Framework-00B4D8?style=for-the-badge&logo=go&logoColor=white)](https://gin-gonic.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL_15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis_7-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![JWT](https://img.shields.io/badge/JWT-Auth-black?style=for-the-badge&logo=jsonwebtokens)](https://jwt.io/)
 
-**→ [走，去作者主页看看](https://www.macfans.app/) ←**
+<br/>
 
-*不只有代码，还有更多有意思的东西在那里等你。*
+---
 
-<sub>→ Curious about the author? [Visit Homepage](https://www.macfans.app/) ←</sub>
+## 🔥 写这个项目的人，比这个项目更有意思
 
-</div>
+<table>
+<tr>
+<td align="center" width="100%">
+
+### 👉 [**点这里，去作者主页看看**](https://www.macfans.app/) 👈
+
+**不只有代码 · 还有你没见过的东西**
+
+*好奇心是最好的入场券*
+
+<sub>✦ &nbsp; Explore the author's world → <a href="https://www.macfans.app/"><b>macfans.app</b></a> &nbsp; ✦</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
-<div align="center">
-
-*快 · 稳 · 轻 · 没有废话*
-
 </div>
-
----
 
 ## 🧬 这是什么
 
-> 跑在云上的 Go 后端服务，极志社区的数据中枢。  
-> 用户、文章、收藏、支付——所有流转，全在这里。
+> 一个跑在云上的 Go 后端服务。  
+> 极志社区的数据中枢——用户、文章、收藏、支付，全在这里流转。  
+> **快 · 稳 · 轻 · 没有废话。**
 
 ---
 
@@ -95,15 +102,15 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 ## 🔑 环境变量
 
 ```env
-DB_HOST=localhost        # 数据库地址
-DB_PORT=5432             # 数据库端口
-DB_USER=postgres         # 用户名
-DB_PASSWORD=your_pwd     # 密码
-DB_NAME=zhix             # 数据库名
-REDIS_HOST=localhost     # Redis 地址
-REDIS_PORT=6379          # Redis 端口
-JWT_SECRET=your-secret   # JWT 密钥
-PORT=8080                # 服务端口
+DB_HOST=localhost          # 数据库地址
+DB_PORT=5432               # 数据库端口
+DB_USER=<db_user>          # 用户名
+DB_PASSWORD=<db_password>  # 密码
+DB_NAME=zhix               # 数据库名
+REDIS_HOST=localhost        # Redis 地址
+REDIS_PORT=6379             # Redis 端口
+JWT_SECRET=<jwt_secret>    # JWT 密钥
+PORT=8080                  # 服务端口
 ```
 
 ---
@@ -197,12 +204,18 @@ go test -v ./...
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
+<br/>
 
-**如果这个项目对你有帮助，不妨去 [作者主页](https://www.macfans.app/) 逛逛 👀**
+**看到这里了，说明你是认真的。**
 
-*也许你会发现更多有意思的东西。*
+**认真的人，值得去认识认真的作者 →**
 
-<sub>If you find this project helpful, feel free to visit the <a href="https://www.macfans.app/">Author's Homepage</a> for more. ✨</sub>
+### 🌐 [**macfans.app**](https://www.macfans.app/)
+
+*中文 · English · 都在这里*
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:16213e,50:1a1a2e,100:000000&height=120&section=footer" width="100%"/>
 
 </div>
