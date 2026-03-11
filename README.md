@@ -1,20 +1,31 @@
 <div align="center">
 
-# ⚡ ZhiX Backend
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=ZhiX%20Backend&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=极志社区%20·%20后端引擎&descAlignY=58&descSize=20&animation=fadeIn" width="100%"/>
 
-**极志社区 · 后端引擎**
+[![Go](https://img.shields.io/badge/Go-1.23-00ADD8?style=flat-square&logo=go&logoColor=white)](https://golang.org/)
+[![Gin](https://img.shields.io/badge/Gin-Framework-008ECF?style=flat-square&logo=go&logoColor=white)](https://gin-gonic.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)]()
 
-*Go 写的不只是代码，是态度。*
+<br/>
 
-[![Go](https://img.shields.io/badge/Go-1.23-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://golang.org/)
-[![Gin](https://img.shields.io/badge/Gin-Framework-008ECF?style=for-the-badge&logo=go&logoColor=white)](https://gin-gonic.com/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Redis](https://img.shields.io/badge/Redis-7-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+### 💡 想看看写这个的人是谁？
+
+**→ [走，去作者主页看看](https://www.macfans.app/) ←**
+
+*不只有代码，还有更多有意思的东西在那里等你。*
+
+<sub>→ Curious about the author? [Visit Homepage](https://www.macfans.app/) ←</sub>
+
+</div>
 
 ---
 
-🏠 作者主页：[点击访问](https://www.macfans.app/) &nbsp;·&nbsp; Author's Homepage: [Visit Here](https://www.macfans.app/)
+<div align="center">
+
+*快 · 稳 · 轻 · 没有废话*
 
 </div>
 
@@ -22,22 +33,21 @@
 
 ## 🧬 这是什么
 
-> 一个跑在云上的 Go 后端服务。  
-> 负责极志社区的全部数据流转——用户、文章、收藏、支付，一个不落。  
-> 快、稳、轻。没有废话。
+> 跑在云上的 Go 后端服务，极志社区的数据中枢。  
+> 用户、文章、收藏、支付——所有流转，全在这里。
 
 ---
 
 ## 🛠️ 技术栈
 
 | | 技术 | 版本 |
-|---|---|---|
-| 🐹 语言 | Go | 1.23 |
-| 🌐 框架 | Gin | latest |
-| 🗄️ 数据库 | PostgreSQL | 15 |
-| ⚡ 缓存 | Redis | 7 |
-| 🔐 认证 | JWT | — |
-| 📦 容器 | Docker | — |
+|:---:|:---:|:---:|
+| 🐹 | Go | 1.23 |
+| 🌐 | Gin | latest |
+| 🗄️ | PostgreSQL | 15 |
+| ⚡ | Redis | 7 |
+| 🔐 | JWT | — |
+| 📦 | Docker | — |
 
 ---
 
@@ -58,22 +68,22 @@ backend/
 
 ## 🚀 快速启动
 
-**第一步：配置环境**
+**① 配置环境**
 
 ```bash
 cp .env.example .env
 # 填写你的数据库 & Redis 配置
 ```
 
-**第二步：跑起来**
+**② 本地跑起来**
 
 ```bash
 go mod download
 go run main.go
-# ✅ 服务运行在 http://localhost:8080
+# ✅ http://localhost:8080
 ```
 
-**或者用 Docker**
+**③ Docker 一键启动**
 
 ```bash
 docker build -t zhix-backend .
@@ -85,30 +95,24 @@ docker run -p 8080:8080 --env-file .env zhix-backend
 ## 🔑 环境变量
 
 ```env
-# 数据库
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=postgres
-DB_PASSWORD=your_password
-DB_NAME=zhix
-
-# Redis
-REDIS_HOST=localhost
-REDIS_PORT=6379
-
-# 认证
-JWT_SECRET=your-secret-key
-
-# 服务
-PORT=8080
+DB_HOST=localhost        # 数据库地址
+DB_PORT=5432             # 数据库端口
+DB_USER=postgres         # 用户名
+DB_PASSWORD=your_pwd     # 密码
+DB_NAME=zhix             # 数据库名
+REDIS_HOST=localhost     # Redis 地址
+REDIS_PORT=6379          # Redis 端口
+JWT_SECRET=your-secret   # JWT 密钥
+PORT=8080                # 服务端口
 ```
 
 ---
 
-## 📡 API 一览
+## 📡 API 接口
 
 <details>
 <summary><b>🔐 认证</b></summary>
+<br/>
 
 | 方法 | 路径 | 说明 |
 |------|------|------|
@@ -119,6 +123,7 @@ PORT=8080
 
 <details>
 <summary><b>📝 文章</b></summary>
+<br/>
 
 | 方法 | 路径 | 权限 | 说明 |
 |------|------|------|------|
@@ -139,6 +144,7 @@ PORT=8080
 
 <details>
 <summary><b>👤 用户 & 统计</b></summary>
+<br/>
 
 | 方法 | 路径 | 权限 | 说明 |
 |------|------|------|------|
@@ -149,6 +155,7 @@ PORT=8080
 
 <details>
 <summary><b>🎨 素材 & 其他</b></summary>
+<br/>
 
 | 方法 | 路径 | 说明 |
 |------|------|------|
@@ -164,19 +171,19 @@ PORT=8080
 
 ---
 
-## 👥 用户体系
+## 👥 用户成长体系
 
 ```
-普通用户成长路径：
-新手用户  →  普通用户  →  活跃用户  →  资深用户  →  传奇用户
-  Lv.1        Lv.2        Lv.3        Lv.4        Lv.5
+🧑 普通用户
+新手用户 ──→ 普通用户 ──→ 活跃用户 ──→ 资深用户 ──→ 传奇用户
+  Lv.1         Lv.2         Lv.3         Lv.4         Lv.5 ✨
 
-管理员成长路径：
-实习编辑  →  编辑  →  资深编辑  →  高级编辑  →  首席编辑
-  Lv.1      Lv.2     Lv.3        Lv.4        Lv.5
+✍️ 管理员
+实习编辑 ──→ 编辑 ──→ 资深编辑 ──→ 高级编辑 ──→ 首席编辑
+  Lv.1      Lv.2     Lv.3        Lv.4        Lv.5 👑
 ```
 
-> 等级由行为积分自动计算，浏览、点赞、收藏、发布均可获得积分。
+> 浏览、点赞、收藏、发布均可积分，等级自动计算。
 
 ---
 
@@ -190,6 +197,12 @@ go test -v ./...
 
 <div align="center">
 
-**Built with ❤️ · Powered by Go · Made for ZhiX**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
+
+**如果这个项目对你有帮助，不妨去 [作者主页](https://www.macfans.app/) 逛逛 👀**
+
+*也许你会发现更多有意思的东西。*
+
+<sub>If you find this project helpful, feel free to visit the <a href="https://www.macfans.app/">Author's Homepage</a> for more. ✨</sub>
 
 </div>
